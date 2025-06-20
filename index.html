@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Tic-Tac-Toe Game - Play vs AI or 2 Players</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<header>
+  <h1>Tic-Tac-Toe</h1>
+  <p>Play against a friend or the computer (AI)</p>
+</header>
+<main>
+  <div class="mode-select" role="radiogroup" aria-label="Choose game mode">
+    <label>
+      <input type="radio" name="game-mode" value="2p" checked aria-checked="true" />
+      2 Players
+    </label>
+    <label>
+      <input type="radio" name="game-mode" value="ai" aria-checked="false" />
+      Play vs AI
+    </label>
+  </div>
+  <div class="board" role="grid" aria-label="Tic-Tac-Toe Board" aria-live="polite"></div>
+  <div class="status" aria-live="polite" aria-atomic="true"></div>
+  <button class="btn-reset" type="button" aria-label="Reset game">Reset Game</button>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
